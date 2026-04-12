@@ -1,0 +1,6 @@
+@EntityFrameWorkCore_CodeFirst_4DBCommunication_HostAddress = http://localhost:5133
+
+GET {{EntityFrameWorkCore_CodeFirst_4DBCommunication_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
