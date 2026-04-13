@@ -11,5 +11,7 @@ namespace EntityFrameWorkCore_CodeFirst_4DBCommunication.DbConnect
         }
         //you need to register model class into DbSet<>placeholder section.
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Departement> departements { get; set; }
+
     }
 }
