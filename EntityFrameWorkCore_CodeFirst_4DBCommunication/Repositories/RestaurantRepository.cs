@@ -64,16 +64,9 @@ namespace EntityFrameWorkCore_CodeFirst_4DBCommunication.Repositories
 
         public async Task<bool> UpdateRestaurant(Restaurant Objres)
         {
-            var result = await _restaurantContext.Restaurants.ToListAsync();
-            if (result.Count == 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-
+            _restaurantContext.Restaurants.Update(Objres);
+            await _restaurantContext.SaveChangesAsync();
+            return true;
         }
     }
 }
