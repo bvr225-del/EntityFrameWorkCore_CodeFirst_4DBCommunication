@@ -126,3 +126,16 @@ namespace EntityFrameWorkCore_CodeFirst_4DBCommunication.Controllers
         }
     }
 }
+/*
+ * ======syntax for code first approcah updations=======
+ Go to Tools=>NugetPackageManger=>PackageManagerConsole=>It will open one console window=>execute below comands stepby step.
+
+
+PM>Add-Migration MigrationName -Context ContextClassName
+ 
+PM>update-database -Context ContextClassName
+============================================================
+PM>Add-migration Department -context DepartmentContext
+ 
+PM>update-database -context DepartmentContext
+*/
